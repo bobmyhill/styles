@@ -50,8 +50,6 @@
   </info>
   <locale xml:lang="en">
     <date form="text">
-      <date-part name="month" form="short" suffix=" "/>
-      <date-part name="day" form="numeric-leading-zeros" suffix=", "/>
       <date-part name="year"/>
     </date>
     <terms>
@@ -288,10 +286,10 @@
     <choose>
       <if variable="collection-title" match="any">
         <text term="in" suffix=" "/>
-        <group delimiter=", " suffix=". ">
+        <group delimiter="." suffix=". ">
           <text variable="collection-title"/>
-          <text variable="collection-number" prefix="no. "/>
-          <text variable="volume" prefix="vol. "/>
+          <text variable="collection-number" prefix=""/>
+          <text variable="volume" prefix=""/>
         </group>
       </if>
     </choose>
