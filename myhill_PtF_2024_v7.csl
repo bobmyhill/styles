@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="sort-only">
   <info>
-    <title>IEEE shortened for PtF 2024 v6</title>
+    <title>IEEE shortened for PtF 2024 v7</title>
     <id>http://www.zotero.org/styles/ieee</id>
     <link href="http://www.zotero.org/styles/ieee" rel="self"/>
     <!-- <link href="https://ieeeauthorcenter.ieee.org/wp-content/uploads/IEEE-Reference-Guide.pdf" rel="documentation"/> - 2018 guidelines -->
@@ -310,11 +310,11 @@
         <!-- Specific Formats -->
         <if type="article-journal">
           <group delimiter=", ">
+            <text macro="issued"/>
             <text macro="title"/>
             <text variable="container-title" font-style="italic" form="short"/>
             <text macro="locators"/>
             <text macro="page"/>
-            <text macro="issued"/>
             <text macro="status"/>
           </group>
           <choose>
@@ -329,6 +329,7 @@
         </if>
         <else-if type="paper-conference speech" match="any">
           <group delimiter=", " suffix=", ">
+            <text macro="issued"/>
             <text macro="title"/>
             <text macro="event"/>
             <text macro="editor"/>
@@ -336,7 +337,6 @@
           <text macro="collection"/>
           <group delimiter=", " suffix=".">
             <text macro="publisher"/>
-            <text macro="issued"/>
             <text macro="page"/>
             <text macro="status"/>
           </group>
@@ -344,6 +344,7 @@
         </else-if>
         <else-if type="chapter">
           <group delimiter=", " suffix=".">
+            <text macro="issued"/>
             <text macro="title"/>
             <group delimiter=" ">
               <text term="in" suffix=" "/>
@@ -353,29 +354,28 @@
             <text macro="editor"/>
             <text macro="collection"/>
             <text macro="publisher"/>
-            <text macro="issued"/>
             <text macro="page"/>
           </group>
           <text macro="access"/>
         </else-if>
         <else-if type="report">
           <group delimiter=", " suffix=".">
+            <text macro="issued"/>
             <text macro="title"/>
             <text macro="publisher"/>
             <group delimiter=" ">
               <text variable="genre"/>
               <text variable="number"/>
             </group>
-            <text macro="issued"/>
           </group>
           <text macro="access"/>
         </else-if>
         <else-if type="thesis">
           <group delimiter=", " suffix=".">
+            <text macro="issued"/>
             <text macro="title"/>
             <text variable="genre"/>
             <text macro="publisher"/>
-            <text macro="issued"/>
           </group>
           <text macro="access"/>
         </else-if>
@@ -388,9 +388,9 @@
         </else-if>
         <else-if type="patent">
           <group delimiter=", ">
+            <text macro="issued"/>
             <text macro="title"/>
             <text variable="number"/>
-            <text macro="issued"/>
           </group>
           <text macro="access"/>
         </else-if>
@@ -398,38 +398,39 @@
         <else-if type="motion_picture">
           <text macro="geographic-location" suffix=". "/>
           <group delimiter=", " suffix=".">
-            <text macro="title"/>
             <text macro="issued"/>
+            <text macro="title"/>
           </group>
           <text macro="access"/>
         </else-if>
         <!-- Generic/Fallback Formats -->
         <else-if type="bill book graphic legal_case legislation report song" match="any">
           <group delimiter=", " suffix=". ">
+            <text macro="issued"/>
             <text macro="title"/>
             <text macro="locators"/>
           </group>
           <text macro="collection"/>
           <group delimiter=", " suffix=".">
             <text macro="publisher"/>
-            <text macro="issued"/>
             <text macro="page"/>
           </group>
           <text macro="access"/>
         </else-if>
         <else-if type="article-magazine article-newspaper broadcast interview manuscript map patent personal_communication song speech thesis webpage" match="any">
           <group delimiter=", " suffix=".">
+            <text macro="issued"/>
             <text macro="title"/>
             <text variable="container-title" font-style="italic"/>
             <text macro="locators"/>
             <text macro="publisher"/>
             <text macro="page"/>
-            <text macro="issued"/>
           </group>
           <text macro="access"/>
         </else-if>
         <else>
           <group delimiter=", " suffix=". ">
+            <text macro="issued"/>
             <text macro="title"/>
             <text variable="container-title" font-style="italic"/>
             <text macro="locators"/>
@@ -438,7 +439,6 @@
           <group delimiter=", " suffix=".">
             <text macro="publisher"/>
             <text macro="page"/>
-            <text macro="issued"/>
           </group>
           <text macro="access"/>
         </else>
