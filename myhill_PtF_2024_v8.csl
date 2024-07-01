@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="sort-only">
   <info>
-    <title>IEEE shortened for PtF 2024 v7</title>
+    <title>IEEE shortened for PtF 2024 v8</title>
     <id>http://www.zotero.org/styles/ieee</id>
     <link href="http://www.zotero.org/styles/ieee" rel="self"/>
     <!-- <link href="https://ieeeauthorcenter.ieee.org/wp-content/uploads/IEEE-Reference-Guide.pdf" rel="documentation"/> - 2018 guidelines -->
@@ -314,7 +314,7 @@
             <text macro="title"/>
             <text variable="container-title" font-style="italic" form="short"/>
             <text macro="locators"/>
-            <text macro="page"/>
+            <!-- text macro="page"/ -->
             <text macro="status"/>
           </group>
           <choose>
@@ -337,7 +337,7 @@
           <text macro="collection"/>
           <group delimiter=", " suffix=".">
             <text macro="publisher"/>
-            <text macro="page"/>
+            <!-- text macro="page"/ -->
             <text macro="status"/>
           </group>
           <text macro="access"/>
@@ -354,7 +354,7 @@
             <text macro="editor"/>
             <text macro="collection"/>
             <text macro="publisher"/>
-            <text macro="page"/>
+            <!-- text macro="page"/ -->
           </group>
           <text macro="access"/>
         </else-if>
@@ -413,7 +413,7 @@
           <text macro="collection"/>
           <group delimiter=", " suffix=".">
             <text macro="publisher"/>
-            <text macro="page"/>
+            <!-- text macro="page"/ -->
           </group>
           <text macro="access"/>
         </else-if>
@@ -424,7 +424,7 @@
             <text variable="container-title" font-style="italic"/>
             <text macro="locators"/>
             <text macro="publisher"/>
-            <text macro="page"/>
+            <!-- text macro="page"/ -->
           </group>
           <text macro="access"/>
         </else-if>
@@ -438,7 +438,7 @@
           <text macro="collection"/>
           <group delimiter=", " suffix=".">
             <text macro="publisher"/>
-            <text macro="page"/>
+            <!-- text macro="page"/ -->
           </group>
           <text macro="access"/>
         </else>
